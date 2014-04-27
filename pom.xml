@@ -5,7 +5,7 @@
     <name>EventBus</name>
     <packaging>jar</packaging>
     <description>A simple but powerful publish-subscribe API that is based on class semantics and/or string (topic) matching.</description>
-    <version>1.4</version>
+    <version>1.4.1-SNAPSHOT</version>
     <url>http://www.eventbus.org</url>
     <scm>
         <url>https://eventbus.dev.java.net/source/browse/eventbus/</url>

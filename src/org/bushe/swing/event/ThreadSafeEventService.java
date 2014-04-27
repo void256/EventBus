@@ -630,9 +630,7 @@ public class ThreadSafeEventService implements EventService {
             hasEverUsedPrioritized = true;
          }
          isWeakProxySubscriber = proxySubscriber.getReferenceStrength() == ReferenceStrength.WEAK;
-         if (isWeakProxySubscriber) {
-            realSubscriber = ((ProxySubscriber) subscriber).getProxiedSubscriber();
-         }
+         realSubscriber = ((ProxySubscriber) subscriber).getProxiedSubscriber();
       }
       if (isWeakRef && isWeakProxySubscriber) {
          throw new IllegalArgumentException("ProxySubscribers should always be subscribed strongly.");
